@@ -1,0 +1,34 @@
+.form-cadastro{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    padding: 20px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-input{
+    display: flex;
+    flex-direction: row;    
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.form-cadastro-submit{
+    width: 150px;
+    margin: 20px;
+    padding: 5px;
+    font-weight: 100;
+}
+
+.input-nota{
+    width: 150px;
+    margin: 20px;
+    padding: 5px;
+    font-weight: 400;
+}
+
+.input-color{
+    margin: 10px;
+}

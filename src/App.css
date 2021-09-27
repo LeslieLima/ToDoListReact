@@ -1,0 +1,10 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(73, 70, 70);
+}
+
+.titulo{
+  color: #ffffff;
+}
