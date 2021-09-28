@@ -6,9 +6,10 @@ const FormularioCadastro = (props) => {
 
     const [nota, setNota] = useState("");
     const [cor, setCor] = useState("");
+    const done = false;
 
     const handleChangeNota = (evento) => {
-        setNota(evento.target.value);
+        setNota(evento.target.value); 
     }
 
     const handleChangeCor = (evento) => {
@@ -17,12 +18,17 @@ const FormularioCadastro = (props) => {
 
     const aoEnviar = (evento) => {
         evento.preventDefault();
-        props.aoEnviar(nota, cor);
+        props.aoEnviar(nota, cor, done);
+        setNota("");
+    }
+
+    const limparNotas = () => {
+       
     }
 
 
     return (
-        
+
         <form
             className="form-cadastro"
             onSubmit={aoEnviar}>
@@ -50,7 +56,11 @@ const FormularioCadastro = (props) => {
                 </button>
             </div>
 
-            <button className="form-cadastro-submit">Limpar Notas</button>
+            <button
+                className="form-cadastro-submit"
+                onClick={limparNotas}>
+                Limpar Notas
+            </button>
 
         </form>
     );

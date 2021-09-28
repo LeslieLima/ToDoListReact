@@ -15,7 +15,7 @@ const ListaDeNotas = (props) => {
               nota={nota.nota} 
               cor={nota.cor} 
               done={nota.done}
-              id={nota.index}
+              id={index}
             />
           </li>
         );

@@ -7,7 +7,7 @@ const CardNota = (props) => {
 
     const aoDuploClique = (evento) => {
         evento.preventDefault();
-        props.aoDuploClique(props.index, props.done);
+        props.aoDuploClique(props);
     }
 
     return (
@@ -16,6 +16,8 @@ const CardNota = (props) => {
             className="card-nota"
             style={{ backgroundColor: props.cor }}>
             <h3>{props.nota}</h3>
+            {props.done}
+            {props.id}
         </section >
     );
 }
